@@ -60,16 +60,56 @@
 # print("this code is not a part of if block")
 
 # weight problem exercise 
-
-weight = float(input('Weight: '))
-weight_type = input("(K)gs or (L)bs: ")
-if weight_type == 'L' or weight_type == 'l':
-    result_kg = weight * 0.45359237
-    print(result_kg)
-elif weight_type == 'K' or weight_type == 'k':
-    result_lb = weight * 2.20462
-    print (result_lb)
- 
-
-
+# weight = float(input('Weight: '))
+# weight_type = input("(K)gs or (L)bs: ")
+# if weight_type == 'L' or weight_type == 'l':
+#     result_kg = weight * 0.45359237
+#     print(result_kg)
+# elif weight_type == 'K' or weight_type == 'k':
+#     result_lb = weight * 2.20462
+#     print (result_lb)
     
+# -- loops --
+# i = 10
+# while i >= 5:
+#       print(i * '*')
+#       i = i - 1 
+
+# num = [1, 3, 4, 5, 7, 9, 10]
+# for items in num:
+#     print(items)
+
+# i = 0
+# while i < len(num):
+#     print(num[i])
+#     i = i + 1
+
+# -- Complex Types: List --
+# names = ["Usman", "Maazo", "Irfan"]
+# print(names)
+# print(names[1])
+# print(names[-1])
+# names[2] = "Hassan"
+# print(names[1:3])
+
+# -- list methods --
+# numbers = [1, 2, 3, 4, 5]
+# numbers.append(6)
+# print(numbers)
+# numbers.insert(0, 0) 
+# print(numbers)
+# print(1 in numbers)
+# print (len(numbers))
+
+# -- Range Function -- 
+# num = range(5, 10, 2)
+# for i in num :
+#     print(i)
+# for i in range(5):
+#     print(i)
+    
+# -- tuples --
+# numbers = (1, 2, 3, 3)
+# # numbers[0] = 0  wont work as tuples are immutable 
+# print(numbers.count(3))
+# print(numbers.index(2))

@@ -84,6 +84,59 @@
 #     print(num[i])
 #     i = i + 1
 
+# l = ['geeks', 'for', 'geeks'] # in array
+# for i in l:
+#     print(i)
+    
+# t = ('geeks', 'for', 'geeks') # in tuple
+# for i in t:
+#     print(i)
+
+# name = 'usman' # in string
+# for i in name:
+#     print(i)
+    
+# d = dict() # in dictionary
+# d['xyz'] = 123
+# d['abc'] = 345
+# for i in d:
+#     print("%s %d" % (i, d[i]))
+
+# vowel = ('a', 'i', 'e', 'o', 'u')
+# for v in vowel:
+#     print(v)
+
+# arr = [1, 2, 3, 4] #iterate using index & range 
+# for i in range(len(arr)):
+#     print(arr[i])
+
+# name = 'arima kousei' # use of continue statement
+# for i in name:
+#     if i == 'a' or i == 'i':
+#         continue
+#     print(i)
+
+# for i in 'usman': # break statement in for loop
+#     if i == 'm':
+#         break
+#     print(i)
+
+# pass statement in python
+# for i in 'python':
+#     pass 
+# print(i)
+
+# wordlist = ['islam', 'my', 'heart']
+# letterlist = []
+# for i in wordlist:
+#     for j in i: 
+#         letterlist.append(j)
+#         print(j)
+
+# list - comprehension
+# sq_nums = [ i*i for i in range(1,5) if i%2 != 0]
+# print(sq_nums)
+
 # -- Complex Types: List --
 # names = ["Usman", "Maazo", "Irfan"]
 # print(names)
@@ -113,3 +166,127 @@
 # # numbers[0] = 0  wont work as tuples are immutable 
 # print(numbers.count(3))
 # print(numbers.index(2))
+
+# --- Exception Handling --- 
+# try: 
+#     print(x)
+# except: 
+#     print('x is not defined')
+    
+# try:
+#     print(y)
+# except NameError:
+#     print('y is not defined')
+# except:
+#     print('Something else went wrong')
+
+# try: 
+#     print(x)
+# except: 
+#     print('Something went wrong')
+# finally: 
+#     print(' exception handling managed ')
+
+# raise keyword 
+# x = -1
+# if x < 0:
+#     raise Exception("sorry, no numbers below zero")
+
+# x = "hello"
+# if not type(x) is int:
+#   raise TypeError("Only integers are allowed")
+
+# function 
+# def greet():
+#     name = 'usman'
+#     print(name) 
+# greet()
+
+# def sum_func(n1, n2):
+#     sum = n1 + n2
+#     print(sum)
+# sum_func(1, 2)
+
+# --- partial functions ---
+# from functools import partial
+# def add(a, b):
+#     return a * 100 + b + 10
+# add_part = partial(add, b = 3)
+# print(add_part(1))
+
+
+# -- anynomous/ lambda function
+# x = lambda n:n*2
+# print(x(5))
+
+# larger = lambda a,b:a if a>b else b
+# print(larger(2,3))
+
+# names = ['usman', 'arman', 'bilal', 'sheroz']
+# names.sort()
+# print(names)
+
+# names = ['m usman', 'arman', 'bilal ch', 'sheroz']
+# names.sort(key = lambda x:len(x))
+# print(names)
+
+# recursive function 
+# def factorial(x):
+#     if x == 1:
+#         return 1
+#     else: 
+#         return (x * factorial(x-1))
+# num = 3
+# print (factorial(num))
+
+# Monkey patch
+# monk.py ( if in module )
+# class A:
+#     def func(self):
+#         print('func() is called')
+
+# # import monk ( if in module )
+# def monkey_f(self):
+#     print('money_f() is being called')
+
+# A.func = monkey_f # monk.A.func (if in module)
+# obj = A()
+
+# obj.func()
+
+# Collections ( Arrays )
+# slicing of list
+# list = [1, 2, 3, 4, 5, 6, 7, 8]
+# sliced_list = list[1:5]
+# print(sliced_list)
+
+# list comprehension 
+# odd_square = [x ** 2 for x in range(1, 11) if x % 2 == 1]
+# print(odd_square)
+
+# set 
+# vowel = {'a', 'i', 'e', 'o', 'u'}
+# vowel.add('u')
+# print(vowel)
+# a = {'a', 'i', 'e', 'o'}
+# b = {'u'}
+# union in set
+# vowel = a.union(b)
+# vowel = a|b # or using | operator 
+# print(vowel)
+
+# dictionary 
+# Dict = dict([('first_name', 'Muhammad'), ('last_name', 'Usman')])
+# print(Dict)
+# Dict = {}
+# Dict['nested'] = {'Nested': {'1': 'Life', '2': 'Geeks'}}
+# print(Dict)
+
+# strings 
+# name = 'arimakousei'
+# name = ''.join(reversed(name))
+# print(name)
+
+# escape sequence 
+# path = "C:\\Internship\\Python_training"
+# print(path)

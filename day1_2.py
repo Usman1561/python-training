@@ -290,3 +290,100 @@
 # escape sequence 
 # path = "C:\\Internship\\Python_training"
 # print(path)
+
+# formatting
+# positional 
+# format_name = "{1} {0}".format('muhammad', 'usman')
+# print(format_name)
+
+# string1 = "{0:.2f}".format(2/7) # rounding off ints
+# print(string1)
+
+# ---- OOP ---- #
+# class Employee: 
+#     empCount = 0
+    
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+#         Employee.empCount += 1
+    
+#     def displayCount(self):
+#         print("Total Employees are %d" % Employee.empCount)
+        
+#     def displayEmployee(self):
+#         print("Name: ", self.name, ", Salary: ", self.salary)
+    
+# emp = Employee('Usman', 90000)
+# emp.displayEmployee()
+# emp.displayCount()
+
+# -- class methods -- 
+
+# class Employee:
+#     company = 'devsinc'
+    
+#     def show(self):
+#         print(self.name)
+#         print(self.company)
+    
+#     def changeCompany(cls, newCompany):
+#         cls.company = newCompany
+        
+# e1 = Employee()
+# e1.name = 'Harry'
+# e1.show()
+# e1.changeCompany('Contour')
+# e1.show()
+
+# -- Inheritance -- #
+# Single level
+# class Parent:
+#     i = 5
+#     def parent_method(self):
+#         print('I am the parent class method')
+
+# class SubClass(Parent):
+#     i = 10 
+#     def child_method(self):
+#         print('I m the sub class method')
+        
+# sub = SubClass()
+# sub.parent_method()
+# sub.child_method()
+
+# Multiple Inheritance
+# class Parent1:
+#     i = 5
+#     def parent1_method(self):
+#         print('I am the parent1 class method')
+        
+# class Parent2:
+#     i = 7
+#     def parent2_method(self):
+#         print('I am the parent2 class method')
+
+# class SubClass(Parent1, Parent2):
+#     i = 10 
+#     def child_method(self):
+#         print('I m the sub class method')
+        
+# sub = SubClass()
+# sub.parent1_method()
+# sub.parent2_method()
+# sub.child_method()
+
+# class/static variable
+# class MyClass:
+#     name = 'usman'
+    
+#     def __init__(self):
+#         print('this is constructor')
+        
+#     def method(self):
+#         language = 'python'
+
+# obj = MyClass()
+# print(obj.name)
+
+
